@@ -467,6 +467,12 @@ class Three(QWidget, Ui_findletters):
             self.resword.setText('Верно')
             self.timeword.setText('Осталось времени')
         self.word = [self.table[randint(0, 35)] for _ in range(8)]
+        f = open('generated_password.txt', mode='a', encoding='utf8')
+
+
+        f.write(''.join(self.word))
+        f.write('\n')
+        f.close()
         self.word = ''.join(self.word)
         self.outputword.setText(self.word)
         self.prerv = 0
