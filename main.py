@@ -634,7 +634,7 @@ class TempWind(Ui_Result, QMainWindow):
             self.replybtn.setText('Ейгә кайту')
             self.backbtn.setText('Тагын бер тапкыр')
         else:
-            self.restword.setText('Ваш результаи')
+            self.restword.setText('Ваш результат')
             self.timeword.setText('Ваше время')
             self.replybtn.setText('Ещё раз')
             self.backbtn.setText('Домой')
